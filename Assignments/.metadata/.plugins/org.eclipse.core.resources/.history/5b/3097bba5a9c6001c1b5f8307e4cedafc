@@ -1,0 +1,331 @@
+package assignment;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+import java.awt.Font;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JTextField;
+import javax.swing.JRadioButton;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JScrollPane;
+import javax.swing.JToggleButton;
+
+import com.mysql.cj.protocol.Resultset;
+
+import net.proteanit.sql.DbUtils;
+
+import javax.swing.ButtonGroup;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Swing_Reg_From2 {
+
+	private JFrame frmRegistrationForm;
+	private JTextField tid;
+	private JTextField tname;
+	private JTextField taddress;
+	private JTextField tcontact;
+	public JTable table;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+	private final ButtonGroup buttonGroup_1 = new ButtonGroup();
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Swing_Reg_From2 window = new Swing_Reg_From2();
+					window.frmRegistrationForm.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Swing_Reg_From2() {
+		initialize();
+		connect();
+		loaddata();
+	}
+	Connection cn;
+	public void connect() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment","root","");
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void loaddata() {
+		PreparedStatement ps;
+		try {
+			ps = cn.prepareStatement("select * from student");
+			ResultSet rs=ps.executeQuery();
+			table.setModel(DbUtils.resultSetToTableModel(rs));
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmRegistrationForm = new JFrame();
+		frmRegistrationForm.setFont(new Font("Georgia", Font.BOLD, 20));
+		frmRegistrationForm.setTitle("REGISTRATION FORM");
+		frmRegistrationForm.setBounds(100, 100, 783, 476);
+		frmRegistrationForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmRegistrationForm.getContentPane().setLayout(null);
+		
+		JLabel registration = new JLabel("Registration Form");
+		registration.setFont(new Font("Tahoma", Font.BOLD, 13));
+		registration.setBounds(49, 24, 124, 16);
+		frmRegistrationForm.getContentPane().add(registration);
+		
+		JLabel id = new JLabel("Id");
+		id.setFont(new Font("Tahoma", Font.BOLD, 13));
+		id.setBounds(25, 60, 46, 14);
+		frmRegistrationForm.getContentPane().add(id);
+		
+		tid = new JTextField();
+		tid.setBounds(107, 51, 108, 23);
+		frmRegistrationForm.getContentPane().add(tid);
+		tid.setColumns(10);
+		
+		JLabel name = new JLabel("Name");
+		name.setFont(new Font("Tahoma", Font.BOLD, 13));
+		name.setBounds(25, 93, 46, 14);
+		frmRegistrationForm.getContentPane().add(name);
+		
+		tname = new JTextField();
+		tname.setBounds(107, 93, 108, 23);
+		frmRegistrationForm.getContentPane().add(tname);
+		tname.setColumns(10);
+		
+		JLabel gender = new JLabel("Gender");
+		gender.setFont(new Font("Tahoma", Font.BOLD, 13));
+		gender.setBounds(25, 129, 57, 23);
+		frmRegistrationForm.getContentPane().add(gender);
+		
+		JRadioButton male = new JRadioButton("Male");
+		buttonGroup.add(male);
+		male.setBounds(107, 133, 57, 16);
+		frmRegistrationForm.getContentPane().add(male);
+		
+		JRadioButton female = new JRadioButton("Female");
+		buttonGroup.add(female);
+		female.setBounds(166, 133, 69, 16);
+		frmRegistrationForm.getContentPane().add(female);
+		
+		
+		JLabel address = new JLabel("Address");
+		address.setFont(new Font("Tahoma", Font.BOLD, 13));
+		address.setBounds(25, 161, 57, 23);
+		frmRegistrationForm.getContentPane().add(address);
+		
+		taddress = new JTextField();
+		taddress.setBounds(107, 158, 108, 37);
+		frmRegistrationForm.getContentPane().add(taddress);
+		taddress.setColumns(10);
+		
+		JLabel contact = new JLabel("Contact");
+		contact.setFont(new Font("Tahoma", Font.BOLD, 13));
+		contact.setBounds(25, 211, 57, 16);
+		frmRegistrationForm.getContentPane().add(contact);
+		
+		tcontact = new JTextField();
+		tcontact.setBounds(107, 207, 108, 26);
+		frmRegistrationForm.getContentPane().add(tcontact);
+		tcontact.setColumns(10);
+		
+		JButton exit = new JButton("Exit");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frmRegistrationForm.setDefaultCloseOperation(0);
+			}
+		});
+		exit.setBounds(25, 261, 89, 23);
+		frmRegistrationForm.getContentPane().add(exit);
+		
+		JButton register = new JButton("Register");
+		register.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int did = Integer.parseInt(tid.getText());
+				
+				try {
+					PreparedStatement ps = cn.prepareStatement("select * from student where id=?");
+					ps.setInt(1, did);
+					ResultSet rs = ps.executeQuery();
+					if(rs.next())
+					{
+						tname.setText(rs.getString(2));
+						gender.setText(rs.getString(3));
+						taddress.setText(rs.getString(4));
+						tcontact.setText(rs.getString(5));
+					}
+					else
+					{
+						String myid=tid.getText();
+						String myname=tname.getText();
+						String mygender="";
+						String myaddress=taddress.getText();
+						String mycontact=tcontact.getText();
+						
+						if(male.isSelected()) {
+							mygender="Male";
+						}
+						else if(female.isSelected()) {
+							mygender="Female";
+						}
+						try {
+							ps=cn.prepareStatement("insert into student values(?,?,?,?,?)");
+							ps.setInt(1, 0);
+							ps.setString(2, myname);
+							ps.setString(3, mygender);
+							ps.setString(4, myaddress);
+							ps.setString(5, mycontact);
+							
+							int i=ps.executeUpdate();
+							if(i>0) {
+								JOptionPane.showMessageDialog(frmRegistrationForm, "Registered successfully!!!");
+								tid.setText(" ");
+								tname.setText(" ");
+								taddress.setText(" ");
+								tcontact.setText(" ");
+								loaddata();
+							}
+							
+						} catch (SQLException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						
+					}
+					String myname=tname.getText();
+					String mygender="";
+					String myaddress=taddress.getText();
+					String mycontact=tcontact.getText();
+					
+					if(male.isSelected()) {
+						mygender="Male";
+					}
+					else if(female.isSelected()) {
+						mygender="Female";
+					}
+					try {
+						ps=cn.prepareStatement("update student set name=?,gender=?,address=?,contact=? where id=?");
+						ps.setString(1, myname);
+						ps.setString(2, mygender);
+						ps.setString(3, myaddress);
+						ps.setString(4, mycontact);
+						ps.setInt(5, did);
+						
+						int i=ps.executeUpdate();
+						
+						if(i>0) {
+							JOptionPane.showMessageDialog(frmRegistrationForm, "Data Updated!!!");
+							tid.setText(" ");
+							tname.setText(" ");
+							taddress.setText(" ");
+							tcontact.setText(" ");
+							loaddata();
+						}
+						
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+			}
+		});
+		register.setBounds(124, 261, 89, 23);
+		frmRegistrationForm.getContentPane().add(register);
+		
+		JButton delete = new JButton("Delete");
+		delete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int did = Integer.parseInt(tid.getText());
+				try {
+					PreparedStatement ps = cn.prepareStatement("delete from student where id = ?");
+					ps.setInt(1, did);
+					int i = ps.executeUpdate();
+					if(i>0)
+					{
+						JOptionPane.showMessageDialog(frmRegistrationForm, "Data deleted!!!");
+						loaddata();
+					}
+				
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		delete.setBounds(25, 295, 89, 23);
+		frmRegistrationForm.getContentPane().add(delete);
+		
+		JButton update = new JButton("Update");
+		update.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		update.setBounds(124, 295, 89, 23);
+		frmRegistrationForm.getContentPane().add(update);
+		
+		JButton reset = new JButton("Reset");
+		reset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tid.setText(" ");
+				tname.setText(" ");
+				taddress.setText(" ");
+				tcontact.setText(" ");
+			}
+		});
+		reset.setBounds(75, 329, 89, 23);
+		frmRegistrationForm.getContentPane().add(reset);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(263, 24, 494, 328);
+		frmRegistrationForm.getContentPane().add(scrollPane);
+		
+		JPanel panel = new JPanel();
+		scrollPane.setViewportView(panel);
+		panel.setLayout(new BorderLayout(0,0));
+		
+		table = new JTable();
+		table.setBounds(494, 324, -493, -323);
+		panel.add(table,BorderLayout.NORTH);
+		
+		JButton refresh = new JButton("Refresh Table");
+		refresh.setBounds(383, 361, 245, 23);
+		frmRegistrationForm.getContentPane().add(refresh);
+	}
+}

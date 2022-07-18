@@ -1,0 +1,12 @@
+package array;
+
+public class Practice02 {
+	public static void main(String[] args) {
+		int arr[]= {12,45,74,32,15,45};
+		int sum=0;
+		for(int i:arr) {
+			sum+=i;
+		}
+		System.out.println("the sum of the element: "+sum);
+	}
+}

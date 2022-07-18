@@ -1,0 +1,20 @@
+package array;
+
+public class Practice06 {
+	public static void main(String[] args) {
+		int arr[]= {85,64,12,75,98,34,62};
+		int max=arr[0];
+		int min=arr[0];
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]>max) {
+//				min=max;
+				max=arr[i];
+			}
+			else if(arr[i]<min) {
+				min=arr[i];
+			}
+		}
+		System.out.println("the max value is:  "+max);
+		System.out.println("the min value is: "+min);
+	}
+}

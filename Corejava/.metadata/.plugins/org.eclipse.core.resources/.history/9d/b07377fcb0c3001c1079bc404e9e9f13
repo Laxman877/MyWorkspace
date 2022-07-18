@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FaceBook</title>
+</head>
+<body>
+<h1>facebook</h1>
+<h2>Facebook helps you connect and share with the people in your life.</h2>
+
+<label><input type="text" name="lname">Email address or phone number</label>
+</body>
+</html>

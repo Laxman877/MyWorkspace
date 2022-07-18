@@ -1,0 +1,25 @@
+package array;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class practice14 {
+	public static void main(String[] args) {
+		String []arr= {"java","php","pythone","c"};
+		String []arr1= {"android","c","java","css"};
+		
+		System.out.println("array 1: "+Arrays.toString(arr));
+		System.out.println("array 2: "+Arrays.toString(arr1));
+		
+		HashSet<String> set=new HashSet<String>();
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr1.length;j++) {
+				if(arr[i].equals(arr1[j])) {
+					set.add(arr1[j]);
+				}
+			}
+		}
+		System.out.println("common element: "+set);
+	}
+}

@@ -1,0 +1,18 @@
+package model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "course")
+public class Course {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "cid")
+	int cid;
+	@Column(name = "cname")
+	String cname;
+	
+	@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+	
+	Instructor instructor;
+}

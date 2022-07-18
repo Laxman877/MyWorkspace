@@ -1,0 +1,11 @@
+package array;
+
+import java.util.Arrays;
+
+public class Practice15 {
+	public static void main(String[] args) {
+		int num[]= {5,7,3,4,9,6,8,2};
+		System.out.println("original array: "+Arrays.toString(num));
+		
+	}
+}

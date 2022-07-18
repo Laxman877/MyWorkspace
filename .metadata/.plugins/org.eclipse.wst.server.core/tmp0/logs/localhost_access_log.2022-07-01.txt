@@ -1,0 +1,16 @@
+127.0.0.1 - - [01/Jul/2022:11:19:00 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:19:03 +0530] "GET /004_HibernateWeb/home.jsp HTTP/1.1" 200 151
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:19:09 +0530] "GET /004_HibernateWeb/addproduct HTTP/1.1" 200 436
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:19:21 +0530] "GET /004_HibernateWeb/addnewproduct?cid=Cloths&pname=Shirt&price=500 HTTP/1.1" 500 1402
+127.0.0.1 - - [01/Jul/2022:11:20:26 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:20:27 +0530] "GET /004_HibernateWeb/home.jsp HTTP/1.1" 200 151
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:20:35 +0530] "GET /004_HibernateWeb/addproduct HTTP/1.1" 200 436
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:20:43 +0530] "GET /004_HibernateWeb/addnewproduct?cid=Electronics&pname=Shirt&price=500 HTTP/1.1" 500 1412
+127.0.0.1 - - [01/Jul/2022:11:23:03 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:23:03 +0530] "GET /004_HibernateWeb/home.jsp HTTP/1.1" 200 151
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:23:12 +0530] "GET /004_HibernateWeb/addproduct HTTP/1.1" 200 436
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:23:26 +0530] "GET /004_HibernateWeb/addnewproduct?cid=Cloths&pname=Shirt&price=500 HTTP/1.1" 500 1284
+127.0.0.1 - - [01/Jul/2022:11:31:59 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:32:00 +0530] "GET /004_HibernateWeb/home.jsp HTTP/1.1" 200 151
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:32:08 +0530] "GET /004_HibernateWeb/addproduct HTTP/1.1" 200 436
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:11:32:19 +0530] "GET /004_HibernateWeb/addnewproduct?cid=Cloths&pname=Shirt&price=500 HTTP/1.1" 500 1402

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Swing_Reg_From.java&apos; to &apos;GUI_JDBC/src/assignment&apos;&#x0D;&#x0A;- Original project: &apos;GUI_JDBC&apos;&#x0D;&#x0A;- Destination element: &apos;GUI_JDBC/src/assignment&apos;&#x0D;&#x0A;- Original element: &apos;assignment.Swing_Reg_From.java&apos;" description="Copy compilation unit" destination="/src&lt;assignment" element1="/src&lt;assignment{Swing_Reg_From.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1651117567288" units="1" version="1.0"/>
+</session>

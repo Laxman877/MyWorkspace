@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ApplicationContex.xml&apos; to &apos;A001_SpringCore/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;A001_SpringCore&apos;&#x0D;&#x0A;- Destination element: &apos;A001_SpringCore/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;ApplicationContex.xml&apos;" description="Copy file" destination="/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/ApplicationContex.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1657251177457" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Practice09 {
+	public static void main(String[] args) {
+		int[]value= {12,45,14,5,9,6,47,52,43,14,52};
+		
+		int index=2;
+		int newvalue=45;
+		
+		System.out.println("original array is: "+Arrays.toString(value));
+		
+		for(int i=value.length-1;i>index;i--) {
+			value[i]=value[i-1];
+		}
+		value[index]=newvalue;
+	}
+}

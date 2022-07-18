@@ -1,0 +1,17 @@
+package array;
+
+import java.util.Arrays;
+
+public class Practice08 {
+	public static void main(String[] args) {
+		int arr[]= {22,25,45,14,52,35,15,25};
+		int arr1[]=new int[10];
+		System.out.println("source array: "+Arrays.toString(arr));
+		
+		for(int i=0;i<arr.length;i++) {
+			arr1[i]=arr[i];
+			
+		}
+		System.out.println("new array : "+Arrays.toString(arr1));
+	}
+}

@@ -1,0 +1,17 @@
+package array;
+
+public class Practice04 {
+	public static boolean contains(int arr[],int item) {
+		for(int n:arr) {
+			if(item==n) {
+				return true;
+			}
+		}
+		return false;
+	}
+	public static void main(String[] args) {
+		int arr[]= {2013,2045,1996,1947,1923,2022};
+		System.out.println("the year is: "+contains(arr, 1923));
+		System.out.println("the year is: "+contains(arr, 2021));
+	}
+}

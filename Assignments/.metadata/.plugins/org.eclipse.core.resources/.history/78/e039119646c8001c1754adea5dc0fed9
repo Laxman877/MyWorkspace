@@ -1,0 +1,11 @@
+package array;
+
+import java.util.Arrays;
+
+public class Practice16 {
+	public static void main(String[] args) {
+		int []arr= {10,45,47,63,77,-15,79};
+		System.out.println("orirginal array; "+Arrays.toString(arr));
+		
+	}
+}

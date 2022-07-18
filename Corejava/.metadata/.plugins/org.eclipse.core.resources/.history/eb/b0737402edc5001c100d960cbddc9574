@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+#container
+{
+	width: 80%;
+	height: 700px;
+	border: 1px	solid black;
+	margin: auto;
+}
+#header
+{
+	height: 15%;
+	background-color: purple;
+}
+#logo
+{
+	width: 30%;
+	background-color: lime;
+	height: 100%;
+	float: left;	
+}
+#title
+{
+	width: 70%;
+	background-color: fuchsia;
+	height: 100%;
+	float: right;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	font-family: monospace;
+}
+#main
+{
+	height: 70%;
+}
+#footer
+{
+	height: 15%;
+	background-color: purple;
+}
+form
+{
+	width: 30%;
+	margin: auto;
+}

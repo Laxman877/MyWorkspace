@@ -1,0 +1,7 @@
+function start(){
+	//alert("ok js calling")
+}
+function getdata(){
+	var uname=document.getElementById("uname").value;
+	alert(uname);
+}

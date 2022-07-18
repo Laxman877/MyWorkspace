@@ -1,0 +1,9 @@
+package com;
+
+public class CurrentAccount implements BankAccount {
+
+	public void getBalance() {
+		System.out.println("This is current account balance!!");
+	}
+
+}

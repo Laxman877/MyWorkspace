@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OTPValidation&apos; to &apos;OtpValidation&apos;" description="Rename resource &apos;OTPValidation&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/OTPValidation" name="OtpValidation" stamp="1655297034860" updateReferences="true"/>
+</session>

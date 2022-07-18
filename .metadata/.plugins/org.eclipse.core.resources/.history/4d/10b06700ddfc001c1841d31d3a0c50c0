@@ -1,0 +1,15 @@
+package main;
+
+import com.Student;
+
+public class MainClass {
+	public static void main(String[] args) {
+//		Student std=new Student();
+//		std.setId(10);
+//		std.setName("laxman");
+//		std.setEmail("laxman@gmail.com");
+		
+		
+		System.out.println(std.getId()+" "+std.getName()+" "+std.getEmail());
+	}
+}

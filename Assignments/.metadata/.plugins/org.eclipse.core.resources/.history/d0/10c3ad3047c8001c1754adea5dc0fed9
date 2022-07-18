@@ -1,0 +1,13 @@
+package array;
+
+import java.util.Arrays;
+
+public class Practice16 {
+	public static void main(String[] args) {
+		int []arr= {10,45,47,63,77,-15,79};
+		System.out.println("orirginal array; "+Arrays.toString(arr));
+		int search_num=10;
+		int fixed_sum=30;
+		System.out.println("Result: "+result(arr, search_num, fixed_sum));
+	}
+}

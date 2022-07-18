@@ -1,0 +1,37 @@
+package com;
+
+public class Question {
+	int id;
+	String qname;
+	Ans ans;
+	
+	public void display() {
+		System.out.println(id+" "+qname);
+		ans.display();
+	}
+	
+	public Ans getAns() {
+		return ans;
+	}
+
+	public void setAns(Ans ans) {
+		this.ans = ans;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getQname() {
+		return qname;
+	}
+
+	public void setQname(String qname) {
+		this.qname = qname;
+	}
+	
+}
