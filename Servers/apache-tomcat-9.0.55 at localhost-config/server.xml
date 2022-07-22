@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="004_HibernateWeb" path="/004_HibernateWeb" reloadable="true" source="org.eclipse.jst.j2ee.server:004_HibernateWeb"/><Context docBase="E-Commerce" path="/E-Commerce" reloadable="true" source="org.eclipse.jst.jee.server:E-Commerce"/><Context docBase="E_CommerceHibernate" path="/E_CommerceHibernate" reloadable="true" source="org.eclipse.jst.j2ee.server:E_CommerceHibernate"/></Host>
+      <Context docBase="004_HibernateWeb" path="/004_HibernateWeb" reloadable="true" source="org.eclipse.jst.j2ee.server:004_HibernateWeb"/><Context docBase="E-Commerce" path="/E-Commerce" reloadable="true" source="org.eclipse.jst.jee.server:E-Commerce"/><Context docBase="E_CommerceHibernate" path="/E_CommerceHibernate" reloadable="true" source="org.eclipse.jst.j2ee.server:E_CommerceHibernate"/><Context docBase="MVC_Pattern" path="/MVC_Pattern" reloadable="true" source="org.eclipse.jst.jee.server:MVC_Pattern"/><Context docBase="A005_SpringMvc" path="/A005_SpringMvc" reloadable="true" source="org.eclipse.jst.j2ee.server:A005_SpringMvc"/></Host>
     </Engine>
   </Service>
 </Server>

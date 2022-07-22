@@ -1,3 +1,4 @@
+<%@page import="model.User"%>
 <%@page import="model.Customer"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -23,7 +24,7 @@
 	<div class="row">
 		<div class="col-md-6 m-auto">
 		<%
-		Customer ud = (Customer)request.getAttribute("user");
+		User ud = (User)request.getAttribute("user");
 		%>
 		<h1 align="center">User List</h1>
 			<h3 align="right"><a href="logout" class="text-warning">Logout</a></h3>
@@ -55,9 +56,9 @@
 				</tr>
 
 				<%
-				ArrayList<Customer> al = (ArrayList) request.getAttribute("data");
+				ArrayList<User> al = (ArrayList) request.getAttribute("data");
 						int k=1;
-						for (Customer u : al) {
+						for (User u : al) {
 				%>
 				<tr>
 					<td><%=k%></td>

@@ -28,10 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.lax.A005_SpringMvc"/>
 		</list>
 		<list key="groupId">
+			<item value="com.lax"/>
 		</list>
 		<list key="artifactId">
+			<item value="A005_SpringMvc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -47,12 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.lax"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="A002_SpringCore_Annotation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

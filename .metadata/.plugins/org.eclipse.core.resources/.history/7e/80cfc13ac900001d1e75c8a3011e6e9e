@@ -1,9 +1,0 @@
-package com;
-
-public class SavingAccount implements BankAccount{
-
-	public void getBalance() {
-		System.out.println("This is Saving account balance");
-	}
-	
-}

@@ -1,3 +1,5 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/A001_SpringCore/src/main/resources/ApplicationContex.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/A001_SpringCore/src/main/resources/ApplicationContex2.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/A003_SpringJDBCTemplate/src/main/resources/applicationcontex.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/A005_SpringMvc/src/main/webapp/WEB-INF/spring-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 eclipse.preferences.version=1

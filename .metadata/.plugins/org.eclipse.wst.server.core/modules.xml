@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:ServeletContext_config" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:MVC_Pattern" serverId="apache-tomcat-9.0.55 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:A005_SpringMvc" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:E-Commerce" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Servletchaining" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:004_HibernateWeb" serverId="apache-tomcat-9.0.55 at localhost"/>

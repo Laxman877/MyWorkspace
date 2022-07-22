@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="A001_SpringCore"/>
+<aop-project name="A005_SpringMvc"/>
+<aop-project name="A003_SpringJDBCTemplate"/>
 </aop-reference-model>
