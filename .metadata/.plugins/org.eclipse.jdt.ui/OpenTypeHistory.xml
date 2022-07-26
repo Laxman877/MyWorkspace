@@ -2,4 +2,6 @@
 <typeInfoHistroy>
     <typeInfo handle="=A002_SpringCore_Annotation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com{BankAccount.java[BankAccount" modifiers="513" timestamp="1657509856781"/>
     <typeInfo handle="=A002_SpringCore_Annotation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com{CustomerDetails.java[CustomerDetails" modifiers="513" timestamp="1657510373111"/>
+    <typeInfo handle="=A006_Spring-mvc_UI/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1658731150706"/>
+    <typeInfo handle="=A006_Spring-mvc_UI/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1658731180314"/>
 </typeInfoHistroy>

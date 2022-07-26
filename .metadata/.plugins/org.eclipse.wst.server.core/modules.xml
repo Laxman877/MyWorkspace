@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
-  <module moduleId="org.eclipse.jst.jee.server:ServeletContext_config" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:MVC_Pattern" serverId="apache-tomcat-9.0.55 at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:A005_SpringMvc" serverId="apache-tomcat-9.0.55 at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:E-Commerce" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Servletchaining" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:004_HibernateWeb" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:E_CommerceHibernate" serverId="apache-tomcat-9.0.55 at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:OTPValidation" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:AjaxDemo" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:ServletConfig_Context" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:FilterLearningDemo" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:HibernateWeb" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Learning_web_jsp" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SessionManagement1" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SessionListener" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServletLearning" serverId="Tomcat v9.0 Server at localhost (2)"/>
+  <module moduleId="org.eclipse.jst.jee.server:MVC_Session" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:001_Hibernate_OneToOneWeb" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:A006_Spring-mvc_UI" serverId="apache-tomcat-9.0.55 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:PracticeSessionmanagement" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServeletContext_config" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:A005_SpringMvc" serverId="apache-tomcat-9.0.55 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:E-Commerce" serverId="apache-tomcat-9.0.55 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:004_HibernateWeb" serverId="apache-tomcat-9.0.55 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:OTPValidation" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:FilterLearningDemo" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Ajax_Crud" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:OtpValidation" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:HibernateCrud" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:SessionListener" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:ServletLearning" serverId="Tomcat v9.0 Server at localhost (2)"/>
   <module moduleId="org.eclipse.jst.jee.server:SessionManagement" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:MVC_Session" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:001_Hibernate_OneToOneWeb" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:PracticeSessionmanagement" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSP_Learning" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>
