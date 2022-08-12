@@ -30,10 +30,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.lax.A007_E_Commerce"/>
 		</list>
 		<list key="groupId">
+			<item value="com.lax"/>
 		</list>
 		<list key="artifactId">
+			<item value="A007_E_Commerce"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

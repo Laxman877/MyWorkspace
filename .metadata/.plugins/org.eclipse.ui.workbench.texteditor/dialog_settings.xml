@@ -1,27 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="editEmployeeModal"/>
+		<item key="selection" value="img/"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="editEmployeeModal"/>
-			<item value="contact us"/>
-			<item value="index"/>
-			<item value="String uname=(String) session.getAttribute(&quot;uname&quot;);"/>
-			<item value=""/>
+			<item value="img/"/>
+			<item value="images/"/>
+			<item value="img"/>
+			<item value="image/"/>
+			<item value="user/css/"/>
+			<item value="scss/"/>
+			<item value="lib/"/>
+			<item value="fonts/"/>
+			<item value="css/"/>
+			<item value="css"/>
+			<item value="js/"/>
+			<item value="AdminCatAdd"/>
+			<item value="index.htmladminhome"/>
+			<item value="index.html"/>
+			<item value="ad"/>
 		</list>
 		<list key="replacehistory">
+			<item value="img/"/>
+			<item value="css/"/>
+			<item value="user/css/"/>
+			<item value="user/js/"/>
+			<item value="Product"/>
+			<item value="user/vendors/"/>
+			<item value="user/pages/"/>
+			<item value="user/images/"/>
+			<item value=".jsp"/>
+			<item value="admin/pages/"/>
+			<item value="admin/images/"/>
+			<item value="admin/js/"/>
+			<item value="admin/js"/>
+			<item value="admin/css/"/>
+			<item value="admin/vendors/"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="188"/>
-		<item key="DIALOG_Y_ORIGIN" value="341"/>
+		<item key="DIALOG_X_ORIGIN" value="887"/>
+		<item key="DIALOG_Y_ORIGIN" value="373"/>
 		<item key="DIALOG_WIDTH" value="322"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_HEIGHT" value="342"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
