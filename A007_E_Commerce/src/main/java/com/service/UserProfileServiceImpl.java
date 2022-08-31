@@ -35,4 +35,10 @@ public class UserProfileServiceImpl implements UserProfileService {
 		userProfileDao.deleteUser(id);
 	}
 
+	@Override
+	public UserProfile loginCheck(UserProfile u) {
+		// TODO Auto-generated method stub
+		return userProfileDao.loginCheck(u);
+	}
+
 }

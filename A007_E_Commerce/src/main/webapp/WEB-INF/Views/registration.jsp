@@ -49,17 +49,22 @@
                <div class="col-lg-4 offset-lg-2">
                   <div class="full">
                      <form:form action="userRegistration" method="post" modelAttribute="userProfile">
-					<span>${msg}</span>
+					<span class="text-success">${msg}</span><br>
                      <form:label path="firstName">First Name</form:label>
                      <form:input path="firstName"/>
+                     <form:errors path="firstName" class="text-danger"></form:errors><br>
                      <form:label path="lastName">Last Name</form:label>
                      <form:input path="lastName"/>
+                     <form:errors path="lastName" class="text-danger"></form:errors><br>
                      <form:label path="email">Email</form:label>
                      <form:input path="email"/>
+                     <form:errors path="email" class="text-danger"></form:errors><br>
                      <form:label path="phno">Phone</form:label>
                      <form:input path="phno"/>
+                     <form:errors path="phno" class="text-danger"></form:errors><br>
                      <form:label path="password">Password</form:label>
                      <form:input path="password"/>
+                     <form:errors path="password" class="text-danger"></form:errors><br>
                      <form:label path="gender">Gender</form:label>
                      <form:radiobutton path="gender" value="male"/>Male
                      <form:radiobutton path="gender" value="female"/>Female

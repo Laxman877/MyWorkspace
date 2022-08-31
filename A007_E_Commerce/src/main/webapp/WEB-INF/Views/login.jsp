@@ -48,7 +48,8 @@
             <div class="row">
                <div class="col-lg-4 offset-lg-2">
                   <div class="full">
-                 <form:form action="login" modelAttribute="userlog">
+                 <form:form action="login" modelAttribute="userlog" method="post">
+                 <span class="text-danger">${error }</span>
                  <div class="form-floating mb-3">
                  			<form:label path="email">Email address</form:label>
                             <form:input path="email" type="email" class="form-control" placeholder="name@example.com"/>

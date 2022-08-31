@@ -29,6 +29,7 @@
 <mvc:resources location="/WEB-INF/user/js/" mapping="/js/**"></mvc:resources>
 <mvc:resources location="/WEB-INF/user/lib/" mapping="/lib/**"></mvc:resources>
 <mvc:resources location="/WEB-INF/user/scss/" mapping="/scss/**"></mvc:resources>
+<mvc:resources location="/WEB-INF/user/image/" mapping="/pimg/**"></mvc:resources>
 
 
 
@@ -51,6 +52,8 @@
 				<value>com.model.UserProfile</value>
 				<value>com.model.Category</value>
 				<value>com.model.Product</value>
+				<value>com.model.Admin</value>
+				<value>com.model.ShopCart</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

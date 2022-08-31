@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!-- Basic -->
+     <!-- Basic -->
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Mobile Metas -->
@@ -12,16 +12,16 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>E-Commerce | blog_list</title>
+      <link rel="shortcut icon" href="user/images/favicon.png" type="">
+      <title>E-Commerce | Blog_list</title>
       <!-- bootstrap core css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="user/css/bootstrap.css" />
       <!-- font awesome style -->
-      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link href="user/css/font-awesome.min.css" rel="stylesheet" />
       <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet" />
+      <link href="user/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="css/responsive.css" rel="stylesheet" />
+      <link href="user/css/responsive.css" rel="stylesheet" />
    </head>
    <body class="sub_page">
      <jsp:include page="userheader.jsp"></jsp:include>

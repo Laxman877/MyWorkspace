@@ -4,9 +4,11 @@
     <typeInfo handle="=A002_SpringCore_Annotation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com{CustomerDetails.java[CustomerDetails" modifiers="513" timestamp="1657510373111"/>
     <typeInfo handle="=A006_Spring-mvc_UI/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1658731150706"/>
     <typeInfo handle="=A006_Spring-mvc_UI/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1658731180314"/>
-    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{UserProfileService.java[UserProfileService" modifiers="513" timestamp="1660112429741"/>
-    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{UserProfileDao.java[UserProfileDao" modifiers="513" timestamp="1660112429727"/>
+    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{UserProfileService.java[UserProfileService" modifiers="513" timestamp="1661316859121"/>
+    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{UserProfileDao.java[UserProfileDao" modifiers="513" timestamp="1661316781356"/>
     <typeInfo handle="=A007_E_Commerce/C:\/Program Files\/Java\/jdk-18.0.1.1\/lib\/jrt-fs.jar`java.base=/module=/true=/=/maven.pomderived=/true=/&lt;java.nio.file.attribute(UserPrincipal.class[UserPrincipal" modifiers="1537" timestamp="1655482705961"/>
     <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{ProductService.java[ProductService" modifiers="513" timestamp="1660107592478"/>
     <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1660107584851"/>
+    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{Adminservice.java[Adminservice" modifiers="513" timestamp="1661321988913"/>
+    <typeInfo handle="=A007_E_Commerce/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{AdminDao.java[AdminDao" modifiers="513" timestamp="1661322022765"/>
 </typeInfoHistroy>

@@ -1,5 +1,7 @@
 package com.model;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,9 +15,19 @@ public class Product {
 	String company;
 	int qty;
 	String image;
+	@ManyToMany(mappedBy = "products")
+	List<ShopCart> shopCarts;
 	
 	@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
 	Category category;
+	
+	public List<ShopCart> getShopCarts() {
+		return shopCarts;
+	}
+
+	public void setShopCarts(List<ShopCart> shopCarts) {
+		this.shopCarts = shopCarts;
+	}
 
 	public int getProductId() {
 		return productId;

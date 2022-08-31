@@ -1,3 +1,4 @@
+<%@page import="com.model.Admin"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,6 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	String admin=(String)session.getAttribute("admin");
+	
+	if(admin==null){
+		request.setAttribute("err", "Please Login First..");
+		request.setAttribute("loginprocess", new Admin());
+		request.getRequestDispatcher("adminlogin.jsp").forward(request, response);
+	}
+%>
 <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="adminhome" class="navbar-brand mx-4 mb-3">
@@ -18,7 +28,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
+                        <h6 class="mb-0"><%=admin%></h6>
                         <span>Admin</span>
                     </div>
                 </div>

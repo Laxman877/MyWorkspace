@@ -10,5 +10,5 @@ public interface UserProfileDao {
 	public List<UserProfile> getallUser();
 	public UserProfile getById(int id);
 	public void deleteUser(int id);
-	
+	public UserProfile loginCheck(UserProfile u);
 }

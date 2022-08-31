@@ -21,6 +21,7 @@
   <module moduleId="org.eclipse.jst.jee.server:OTPValidation" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:A007_E_Commerce" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:FilterLearningDemo" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ImageUploading" serverId="apache-tomcat-9.0.55 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Ajax_Crud" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:OtpValidation" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:HibernateCrud" serverId="Tomcat v9.0 Server at localhost"/>

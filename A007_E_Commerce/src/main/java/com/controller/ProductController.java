@@ -71,10 +71,14 @@ public class ProductController {
 	
 	@RequestMapping(value = "/addProduct", method = RequestMethod.POST)
 	public ModelAndView addProduct(@ModelAttribute("product")Product product,@RequestParam("catid") int id,@RequestParam CommonsMultipartFile file, HttpSession session) {
-		//String path=session.getServletContext().getRealPath("/");
-		String path="D:\\Laxman_DoNot_Delete\\Java\\A007_E_Commerce\\src\\main\\webapp\\WEB-INF\\user\\img\\products";
+		String path=session.getServletContext().getRealPath("/WEB-INF/user/image");
+		//String path="D:\\Laxman_DoNot_Delete\\Java\\A007_E_Commerce\\src\\main\\webapp\\WEB-INF\\user\\img\\products";
 		String filepath=path+File.separator+file.getOriginalFilename();
 		System.out.println(filepath);
+		File f=new File(path);
+		if(!f.exists()) {
+			f.mkdir();
+		}
 		byte b[]=file.getBytes();
 		
 		try {

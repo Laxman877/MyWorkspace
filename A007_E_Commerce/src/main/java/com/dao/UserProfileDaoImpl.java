@@ -38,5 +38,12 @@ public class UserProfileDaoImpl implements UserProfileDao {
 		// TODO Auto-generated method stub
 
 	}
+	public UserProfile loginCheck(UserProfile u) {
+	
+		Session session=sessionFactory.getCurrentSession();
+		UserProfile profile= (UserProfile) session.createQuery("from UserProfile u where u.email='"+u.getEmail()+"' and u.password='"+u.getPassword()+"'").uniqueResult();
+		return profile;
+		
+	}
 
 }

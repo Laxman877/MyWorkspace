@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
     <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
@@ -14,16 +15,16 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="img/favicon.png" type="">
+      <link rel="shortcut icon" href="user/images/favicon.png" type="">
       <title>E-Commerce | Home</title>
       <!-- bootstrap core css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="user/css/bootstrap.css" />
       <!-- font awesome style -->
-      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link href="user/css/font-awesome.min.css" rel="stylesheet" />
       <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet" />
+      <link href="user/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="css/responsive.css" rel="stylesheet" />
+      <link href="user/css/responsive.css" rel="stylesheet" />
    </head>
    <body>
    <jsp:include page="userheader.jsp"></jsp:include>
@@ -121,8 +122,91 @@
             </div>
          </section>
          <!-- end slider section -->
-      </div>
-      <!-- why section -->
+      
+       <!-- product section -->
+      <section class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                  Our <span>products</span>
+               </h2>
+                <div class="col-lg-8 col-md-8">
+               <c:forEach var="cdata" items="${categories}">
+               		 <ul class="filter__controls">
+                    
+                    <li data-filter=".cosmetic">${cdata.getCat_name()}</li>
+                </ul>
+               </c:forEach>
+            </div>
+            </div>
+            <div class="row">
+               <c:forEach var="pdata" items="${products}">
+               		<div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="addcart?pid=${pdata.getProductId()}" class="option1">
+                           Add To Cart
+                           </a>
+                           <a href="" class="option2">
+                           Buy Now
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="pimg/${pdata.getImage()}" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           ${pdata.getProductName()}
+                        </h5>
+                        <h6>
+                          ${pdata.getPrice()}
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+               </c:forEach>
+         </div>
+            <div class="btn-box">
+               <a href="products">
+               View All products
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- end product section -->
+      
+      
+      
+      <!-- arrival section -->
+      <section class="arrival_section">
+         <div class="container">
+            <div class="box">
+               <div class="arrival_bg_box">
+                  <img src="img/arrival-bg.png" alt="">
+               </div>
+               <div class="row">
+                  <div class="col-md-6 ml-auto">
+                     <div class="heading_container remove_line_bt">
+                        <h2>
+                           #NewArrivals
+                        </h2>
+                     </div>
+                     <p style="margin-top: 20px;margin-bottom: 30px;">
+                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
+                     </p>
+                     <a href="">
+                     Shop Now
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end arrival section -->
+      
+     <!-- why section -->
       <section class="why_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
@@ -370,79 +454,6 @@
          </div>
       </section>
       <!-- end why section -->
-      
-      <!-- arrival section -->
-      <section class="arrival_section">
-         <div class="container">
-            <div class="box">
-               <div class="arrival_bg_box">
-                  <img src="img/arrival-bg.png" alt="">
-               </div>
-               <div class="row">
-                  <div class="col-md-6 ml-auto">
-                     <div class="heading_container remove_line_bt">
-                        <h2>
-                           #NewArrivals
-                        </h2>
-                     </div>
-                     <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
-                     </p>
-                     <a href="">
-                     Shop Now
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end arrival section -->
-      
-      <!-- product section -->
-      <section class="product_section layout_padding">
-         <div class="container">
-            <div class="heading_container heading_center">
-               <h2>
-                  Our <span>products</span>
-               </h2>
-            </div>
-            <div class="row">
-               <c:forEach var="pdata" items="${products}">
-               		<div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="img/products/${pdata.getImage()}" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           ${pdata.getProductName()}
-                        </h5>
-                        <h6>
-                          ${pdata.getPrice()}
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               </c:forEach>
-         </div>
-            <div class="btn-box">
-               <a href="">
-               View All products
-               </a>
-            </div>
-         </div>
-      </section>
-      <!-- end product section -->
 
       <!-- subscribe section -->
       <section class="subscribe_section">

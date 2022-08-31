@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	String user=(String)session.getAttribute("user");
+%>
 <div class="hero_area">
          <!-- header section strats -->
          <header class="header_section">
@@ -19,14 +22,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav">
                         <li class="nav-item active">
-                           <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                       <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="about.jsp">About</a></li>
-                              <li><a href="testimonial.jsp">Testimonial</a></li>
-                           </ul>
+                           <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="products">Products</a>
@@ -38,10 +34,16 @@
                            <a class="nav-link" href="contact">Contact</a>
                         </li>
                          <li class="nav-item">
-                           <a class="nav-link" href="userLogin">Login | Register</a>
+                         <%
+                         	if(user==null){%>
+	                           <a class="nav-link" href="userLogin">Login</a>
+                         	<%}else{%>
+                         		<a class="nav-link" href="userLogout">Logout</a> Welcome , <%=user%> 
+                         	<%}
+                         %>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#">
+                           <a class="nav-link" href="shopcart">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                  <g>
                                     <g>
@@ -96,12 +98,13 @@
                               </svg>
                            </a>
                         </li>
-                        <form class="form-inline">
+                       
+                     </ul>
+                      <form class="form-inline">
                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                            <i class="fa fa-search" aria-hidden="true"></i>
                            </button>
                         </form>
-                     </ul>
                   </div>
                </nav>
             </div>

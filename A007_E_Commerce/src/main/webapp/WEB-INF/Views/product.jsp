@@ -14,16 +14,16 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>E-Commerce | product</title>
+      <link rel="shortcut icon" href="user/images/favicon.png" type="">
+      <title>E-Commerce | Products</title>
       <!-- bootstrap core css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="user/css/bootstrap.css" />
       <!-- font awesome style -->
-      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link href="user/css/font-awesome.min.css" rel="stylesheet" />
       <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet" />
+      <link href="user/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="css/responsive.css" rel="stylesheet" />
+      <link href="user/css/responsive.css" rel="stylesheet" />
    </head>
    <body class="sub_page">
       <jsp:include page="userheader.jsp"></jsp:include>
@@ -47,6 +47,14 @@
                <h2>
                   Our <span>products</span>
                </h2>
+               <div class="col-lg-8 col-md-8">
+               <c:forEach var="cdata" items="${categories}">
+               		 <ul class="filter__controls">
+                    
+                    <li data-filter=".cosmetic">${cdata.getCat_name()}</li>
+                </ul>
+               </c:forEach>
+            </div>
             </div>
             <div class="row">
             	 <c:forEach var="pdata" items="${products}">
@@ -63,7 +71,7 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="img/products/${pdata.getImage()}" alt="">
+                        <img src="pimg/${pdata.getImage()}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
